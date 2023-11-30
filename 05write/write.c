@@ -18,7 +18,7 @@ int main(int arg,char *argv[])
     }
 
     printf("fd is %d\n",fd);
-    write(1,"hello word\n",6);//标注输出前面的什么都不加直接输出到屏幕上
+    write(fd,"hello word\n",6);// 第一个参数写1，写fd是写入文件a直接输出到屏幕上
 
     close(fd);
     return 0;
